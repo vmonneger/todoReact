@@ -33,12 +33,12 @@ export default function App() {
       />
     )
   }
-  console.log(cards)
+  console.log('app', cards)
   return(
     <div className="container px-5">
       <h1 className="text-center">Une TODO list incroyable !</h1>
       <div className="mb-5">
-        <Form setCards={setCards} />
+        <Form getCards={cards} setCards={setCards} />
       </div>
       <div className="row">
         {cardsParsed}
